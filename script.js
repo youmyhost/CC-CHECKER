@@ -58,7 +58,7 @@ checkBtn.addEventListener("click", function () {
     // CORRECTED LOGIC:
     // 1. Perform Luhn check FIRST
     if (!isValidCreditCard(cardNumber)) {
-      muradList.push(`<span style='color:grey; font-weight:bold;'>Invalid (Luhn Check)</span> | ${line} /OshekherO`);
+      muradList.push(`<span style='color:grey; font-weight:bold;'>Invalid (Luhn Check)</span> | ${line} /YoumyhostV2`);
       // If invalid, continue to the next card
       continue; 
     }
@@ -66,11 +66,11 @@ checkBtn.addEventListener("click", function () {
     // 2. If valid, THEN categorize based on the random number
     const randomNumber = Math.random();
     if (randomNumber < 0.2) {
-      aliList.push(`<span style='color:green; font-weight:bold;'>Live</span> | ${line} -> [Charge <span style='color:green; font-weight:bold;'>$4,99</span>] [GATE:01]. /OshekherO`);
+      aliList.push(`<span style='color:green; font-weight:bold;'>Live</span> | ${line} -> [Charge <span style='color:green; font-weight:bold;'>$4,99</span>] [GATE:01]. /YoumyhostV2`);
     } else if (randomNumber < 0.9) {
-      muhammadList.push(`<span style='color:red; font-weight:bold;'>Dead</span> | ${line} -> [Charge <span style='color:red; font-weight:bold;'>$0,00</span>] [GATE:01]. /OshekherO`);
+      muhammadList.push(`<span style='color:red; font-weight:bold;'>Dead</span> | ${line} -> [Charge <span style='color:red; font-weight:bold;'>$0,00</span>] [GATE:01]. /YoumyhostV2`);
     } else {
-      muradList.push(`<span style='color:orange; font-weight:bold;'>Unknown</span> | ${line} -> [Charge <span style='color:orange; font-weight:bold;'>N/A</span>] [GATE:01]. /OshekherO`);
+      muradList.push(`<span style='color:orange; font-weight:bold;'>Unknown</span> | ${line} -> [Charge <span style='color:orange; font-weight:bold;'>N/A</span>] [GATE:01]. /YoumyhostV2`);
     }
   } 
 
@@ -158,3 +158,4 @@ function toggleButtons() {
   stopCheckBtn.disabled = false;
   stopCheckBtn.style.backgroundColor = "green";
 }
+
